@@ -52,7 +52,9 @@ footer{text-align:center;padding:30px;color:var(--mut);font-size:.85rem;border-t
 .rv{opacity:0;transform:translateY(40px);transition:1s}.rv.on{opacity:1;transform:none}
 @media(max-width:860px){.hero{grid-template-columns:1fr;text-align:center}.hero p{margin-inline:auto}.scene{height:320px}nav a{display:none}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important}}
-nav .brand img{height:64px;width:auto}.brand{font-size:1.15rem}@media(max-width:860px){nav .brand img{height:52px}}</style></head><body>
+nav .brand img{height:64px;width:auto}.brand{font-size:1.15rem}@media(max-width:860px){nav .brand img{height:52px}}.ct{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:22px}.ctb{padding:12px 22px;border-radius:999px;border:1px solid rgba(80,180,255,.5);background:rgba(20,60,120,.35);color:#fff;text-decoration:none;font-weight:600;backdrop-filter:blur(8px)}.ctb:hover{background:rgba(40,120,220,.5)}
+.wa-float{position:fixed;right:22px;bottom:22px;width:62px;height:62px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.4);z-index:999;animation:waPulse 2s infinite}.wa-float:hover{transform:scale(1.08)}.wa-float svg{width:34px;height:34px;fill:#fff}@keyframes waPulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+</style></head><body>
 <canvas id="bg"></canvas><div class="glow g1"></div><div class="glow g2"></div>
 <nav><div class="brand"><img src="logo_rasevyx.jpg" alt="Rasevyx">RASEVYX</div><div><a href="#servicos">Serviços</a><a href="#diferenciais">Diferenciais</a><a href="#contato">Contato</a></div></nav>
 <header class="hero">
@@ -78,7 +80,7 @@ nav .brand img{height:64px;width:auto}.brand{font-size:1.15rem}@media(max-width:
 </div></section>
 <section id="diferenciais"><h2>Por que a <span class="grad">Rasevyx</span></h2><p class="sub">Tecnologia que trabalha para o seu negócio, sem complicação.</p>
 <div class="who"><span>Soluções sob medida</span><span>Do cabo à inteligência artificial</span><span>Foco em segurança</span><span>Atendimento direto e próximo</span><span>Tecnologia que simplifica</span></div></section>
-<div class="cta rv" id="contato"><h2>Vamos <span class="grad">conversar</span>?</h2><p>Em breve, novos canais de atendimento.</p></div>
+<div class="cta rv" id="contato"><h2>Vamos <span class="grad">conversar</span>?</h2><p>Fale com a gente pelo canal que preferir.</p><div class="ct"><a class="ctb" href="https://wa.me/5586995910392?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Rasevyx." target="_blank" rel="noopener">WhatsApp: (86) 99591-0392</a><a class="ctb" href="tel:+5586995910392">Ligar: (86) 99591-0392</a><a class="ctb" href="mailto:contato@rasevyx.com.br">contato@rasevyx.com.br</a></div></div>
 </main>
 <footer>© 2026 Rasevyx. Todos os direitos reservados.</footer>
 <script>
@@ -92,4 +94,4 @@ const d=Math.hypot(p.x-m.x,p.y-m.y);if(d<170){x.strokeStyle=`rgba(139,92,246,${.
 requestAnimationFrame(t)})();
 document.querySelectorAll('.card').forEach(k=>{k.addEventListener('mousemove',e=>{const r=k.getBoundingClientRect(),a=(e.clientX-r.left)/r.width-.5,b=(e.clientY-r.top)/r.height-.5;k.style.transform=`rotateY(${a*18}deg) rotateX(${-b*18}deg)`});k.addEventListener('mouseleave',()=>k.style.transform='')});
 const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('on')),{threshold:.15});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
-</script></body></html>
+</script><a class="wa-float" href="https://wa.me/5586995910392?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Rasevyx." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-1.9c1.8 1 3.800 1.500 5.600 1.500 7 0 12.600-5.600 12.600-12.500S23 3 16 3zm0 22.800c-1.800 0-3.500-.5-5-1.400l-.4-.2-4.400 1.100 1.200-4.300-.3-.4a10 10 0 0 1-1.500-5.400C5.600 9.900 10.300 5.300 16 5.300s10.400 4.600 10.400 10.200S21.700 25.800 16 25.800zm5.700-7.500c-.3-.2-1.800-.9-2.100-1-.3-.1-.5-.2-.7.200-.2.300-.8 1-.9 1.200-.2.200-.3.200-.6.100-.3-.2-1.300-.5-2.500-1.500-.9-.8-1.500-1.800-1.700-2.100-.2-.3 0-.5.100-.6l.5-.5c.1-.2.200-.3.300-.5.100-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400-.3.300-1.100 1.100-1.100 2.600s1.100 3 1.300 3.200c.2.200 2.200 3.300 5.200 4.600 2.600 1 3.100.8 3.600.8.600-.1 1.800-.7 2-1.400.3-.7.300-1.300.2-1.400-.1-.2-.3-.3-.6-.4z"/></svg></a></body></html>
